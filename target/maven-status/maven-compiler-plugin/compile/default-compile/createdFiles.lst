@@ -1,0 +1,10 @@
+com\pluralsight\resolver\Query.class
+com\pluralsight\entity\Application.class
+com\pluralsight\repository\ApplicationRepository.class
+com\pluralsight\repository\ReleaseRepository.class
+com\pluralsight\entity\Ticket.class
+com\pluralsight\repository\TicketRepository.class
+com\pluralsight\entity\Release.class
+com\pluralsight\mutator\Mutation.class
+com\pluralsight\exception\ApplicationNotFoundException.class
+com\pluralsight\GraphQLApplication.class

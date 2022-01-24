@@ -1,0 +1,10 @@
+S:\git\springboot-graphql\src\main\java\com\pluralsight\resolver\Query.java
+S:\git\springboot-graphql\src\main\java\com\pluralsight\entity\Release.java
+S:\git\springboot-graphql\src\main\java\com\pluralsight\exception\ApplicationNotFoundException.java
+S:\git\springboot-graphql\src\main\java\com\pluralsight\mutator\Mutation.java
+S:\git\springboot-graphql\src\main\java\com\pluralsight\entity\Application.java
+S:\git\springboot-graphql\src\main\java\com\pluralsight\GraphQLApplication.java
+S:\git\springboot-graphql\src\main\java\com\pluralsight\repository\ReleaseRepository.java
+S:\git\springboot-graphql\src\main\java\com\pluralsight\entity\Ticket.java
+S:\git\springboot-graphql\src\main\java\com\pluralsight\repository\ApplicationRepository.java
+S:\git\springboot-graphql\src\main\java\com\pluralsight\repository\TicketRepository.java
