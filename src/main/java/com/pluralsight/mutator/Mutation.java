@@ -1,12 +1,13 @@
 package com.pluralsight.mutator;
 
-import com.coxautodev.graphql.tools.GraphQLMutationResolver;
-import com.pluralsight.entity.Application;
-import com.pluralsight.exception.ApplicationNotFoundException;
-import com.pluralsight.repository.ApplicationRepository;
+import java.util.Optional;
+
 import org.springframework.stereotype.Component;
 
-import java.util.Optional;
+import com.coxautodev.graphql.tools.GraphQLMutationResolver;
+import com.pluralsight.entity.Application;
+import com.pluralsight.exception.CustomeGraphQLError;
+import com.pluralsight.repository.ApplicationRepository;
 
 @Component
 public class Mutation implements GraphQLMutationResolver {
@@ -38,7 +39,7 @@ public class Mutation implements GraphQLMutationResolver {
             applicationRepository.save(application);
             return application;
         } else {
-            throw new ApplicationNotFoundException("Application Not Found", id);
+            throw new CustomeGraphQLError("Application Not Found", id);
         }
     }
 }

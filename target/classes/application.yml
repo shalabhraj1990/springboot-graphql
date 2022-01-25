@@ -1,0 +1,9 @@
+graphql:
+
+  playground:
+    headers:
+      Authorization: Bearer TOKEN
+
+
+
+

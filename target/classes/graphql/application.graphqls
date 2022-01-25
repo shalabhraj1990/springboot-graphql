@@ -4,10 +4,11 @@ type Application {
   owner: String!
   description: String!
 }
-
+# All availabel quries on this graphql server
 type Query {
   findAllApplications: [Application]!
   countApplications: Long!
+  bankAccount(id:ID!):BankAccount
 }
 
 type Mutation {

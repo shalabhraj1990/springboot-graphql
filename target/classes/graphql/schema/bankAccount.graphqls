@@ -1,0 +1,11 @@
+type BankAccount {
+  id:ID!
+  client :Client
+  currency:Currency!
+}
+
+type Client {
+  firstName:String!
+  middleName:[String!]
+  lastName:String!
+}

@@ -8,11 +8,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ApplicationNotFoundException extends RuntimeException implements GraphQLError {
+public class CustomeGraphQLError extends RuntimeException implements GraphQLError {
 
     private Map<String, Object> extensions = new HashMap<>();
 
-    public ApplicationNotFoundException(String message, Long invalidApplicationId) {
+    public CustomeGraphQLError(String message, Long invalidApplicationId) {
         super(message);
         extensions.put("invalidApplicationId", invalidApplicationId);
     }
