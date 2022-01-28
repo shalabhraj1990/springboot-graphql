@@ -1,3 +1,7 @@
+scalar NonNegativeInt
+scalar Date
+scalar DateTime
+
 type Application {
   id: ID!
   name: String!
@@ -7,16 +11,20 @@ type Application {
 # All availabel quries on this graphql server
 type Query {
   findAllApplications: [Application]!
-  countApplications: Long!
+  countApplications: Float!
   bankAccount(id:ID!):BankAccount
 }
 
 input CreateBankAccountRequest{
  firstName: String!
+  age :NonNegativeInt
+
 }
 type Mutation {
   newApplication(name: String!, owner: String!, description: String!) : Application!
   deleteApplication(id:ID!) : Boolean
   updateApplicationOwner(newOwner: String!, id:ID!) : Application!
   createBankAccount(input:CreateBankAccountRequest!) : BankAccount
+  #upload a file
+  uploadFile:ID!
 }

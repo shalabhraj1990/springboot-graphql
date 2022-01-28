@@ -1,3 +1,7 @@
+scalar NonNegativeInt
+scalar Date
+scalar DateTime
+
 type Application {
   id: ID!
   name: String!
@@ -13,10 +17,14 @@ type Query {
 
 input CreateBankAccountRequest{
  firstName: String!
+  age :NonNegativeInt
+
 }
 type Mutation {
   newApplication(name: String!, owner: String!, description: String!) : Application!
   deleteApplication(id:ID!) : Boolean
   updateApplicationOwner(newOwner: String!, id:ID!) : Application!
   createBankAccount(input:CreateBankAccountRequest!) : BankAccount
+  #upload a file
+  uploadFile:ID!
 }
